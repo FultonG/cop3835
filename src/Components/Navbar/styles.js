@@ -15,7 +15,6 @@ export const Nav = styled.div`
 export const NavItem = styled.li`
   list-style-type: none;
   color: white;
-  font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 `;
 
 export const StyledLink = styled(Link)`

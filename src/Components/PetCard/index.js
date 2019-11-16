@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, PetImage, PetDescription } from './styles';
+import Card from '../Card';
+import { PetImage, PetDescription } from './styles';
 
 const PetCard = (props) => {
   return(

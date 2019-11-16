@@ -1,7 +1,7 @@
 import React from 'react';
 import PetCard from '../../Components/PetCard';
 import luxPic from '../../static/images/lux.jpg'
-import { Container } from './styles';
+import Container from '../../Components/Container';
 
 const Lux = () => {
   let lux = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PetCard from '../../Components/PetCard';
 import fundyPic from '../../static/images/fundy.jpg'
-import { Container } from './styles';
+import Container from '../../Components/Container';
 
 const Fundy = () => {
   let fundy = {
