@@ -1,16 +1,31 @@
 import React from 'react';
-import { Nav, NavItem } from './styles';
+import { BrowserRouter as Router} from "react-router-dom";
+import { Nav, NavItem, StyledLink } from './styles';
 
 const Navbar = () => {
   return (
-    <Nav>
-      <NavItem>Home</NavItem>
-      <NavItem>Fundy</NavItem>
-      <NavItem>Chin Li</NavItem>
-      <NavItem>Lux</NavItem>
-      <NavItem>Cash</NavItem>
-      <NavItem>Comet</NavItem>
-    </Nav>
+    <Router>
+      <Nav>
+        <NavItem>
+          <StyledLink to='/'>Home</StyledLink>
+        </NavItem>
+        <NavItem>
+          <StyledLink to='/fundy'>Fundy</StyledLink>
+        </NavItem>
+        <NavItem>
+          <StyledLink to='/chin-li'>Chin Li</StyledLink>
+        </NavItem>
+        <NavItem>
+          <StyledLink to='/lux'>Lux</StyledLink>
+        </NavItem>
+        <NavItem>
+          <StyledLink to='/cash'>Cash</StyledLink>
+        </NavItem>
+        <NavItem>
+          <StyledLink to='/comet'>Comet</StyledLink>
+        </NavItem>
+      </Nav>
+    </Router>
   )
 }
 
