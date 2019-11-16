@@ -1,10 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
 import { Nav, NavItem, StyledLink } from './styles';
 
 const Navbar = () => {
   return (
-    <Router>
       <Nav>
         <NavItem>
           <StyledLink to='/'>Home</StyledLink>
@@ -25,7 +23,6 @@ const Navbar = () => {
           <StyledLink to='/comet'>Comet</StyledLink>
         </NavItem>
       </Nav>
-    </Router>
   )
 }
 

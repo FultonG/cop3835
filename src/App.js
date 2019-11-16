@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from './Components/Navbar';
 import Fundy from './Pages/fundy';
@@ -8,7 +8,7 @@ import Home from './Pages/home';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Navbar></Navbar>
       <Switch>
         <Route path='/fundy' component={Fundy}></Route>
