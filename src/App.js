@@ -10,6 +10,7 @@ import FundyImg from './static/images/fundy.jpg'
 import LuxImg from './static/images/lux.jpg'
 import CashImg from './static/images/cash.jpg'
 import ChinLiImg from './static/images/chin-li.jpg'
+import CometImg from './static/images/comet.jpg'
 
 function App() {
 
@@ -43,7 +44,7 @@ function App() {
       id: 4
     },
     {
-      img: CashImg,
+      img: CometImg,
       name: 'Comet',
       type: 'Tangerine Milk Snake',
       link: '/comet',
