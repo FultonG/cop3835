@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3909a4e6662f14b07ae6e562e89e7eac",
+    "revision": "822b745cde2ff7a474b9ecf5de6ebdf4",
     "url": "/cop3835/index.html"
   },
   {
-    "revision": "56fff47e1859c4a531ff",
-    "url": "/cop3835/static/js/2.c2c1d28b.chunk.js"
+    "revision": "5c0255c67516a746fcbd",
+    "url": "/cop3835/static/js/2.f6b7e4c6.chunk.js"
   },
   {
-    "revision": "d6a24e8f2a465fa8c9ea",
-    "url": "/cop3835/static/js/main.fbc83f76.chunk.js"
+    "revision": "25d9d6a8e7130554e1de",
+    "url": "/cop3835/static/js/main.1915741c.chunk.js"
   },
   {
     "revision": "4cc1aee7478b406410b8",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "161f0c1c709a7482357238270c65b0d9",
     "url": "/cop3835/static/media/chin-li.161f0c1c.jpg"
+  },
+  {
+    "revision": "1b28837d996e78599d98800c428270fe",
+    "url": "/cop3835/static/media/comet.1b28837d.jpg"
   },
   {
     "revision": "8aba495a771a7b5079956ebc3e63e836",
