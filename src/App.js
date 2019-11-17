@@ -5,6 +5,9 @@ import Navbar from './Components/Navbar';
 import Fundy from './Pages/fundy';
 import Lux from './Pages/lux';
 import Home from './Pages/home';
+import Cash from './Pages/cash';
+import ChinLi from './Pages/chinli';
+import Comet from './Pages/comet';
 
 import FundyImg from './static/images/fundy.jpg'
 import LuxImg from './static/images/lux.jpg'
@@ -57,10 +60,10 @@ function App() {
       <Navbar pets={pets}></Navbar>
       <Switch>
         <Route path='/fundy' component={Fundy}></Route>
-        <Route path='/chin-li'></Route>
+        <Route path='/chin-li' component={ChinLi}></Route>
         <Route path='/lux' component={Lux}></Route>
-        <Route path='/cash'></Route>
-        <Route path='/comet'></Route>
+        <Route path='/cash'component={Cash}></Route>
+        <Route path='/comet' component={Comet}></Route>
         <Route exact path='/' render={(props) => <Home {...props} pets={pets}/>}></Route>
       </Switch>
     </Router>
