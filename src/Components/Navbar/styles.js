@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const Nav = styled.div`
   display: flex;
@@ -15,13 +14,4 @@ export const Nav = styled.div`
 export const NavItem = styled.li`
   list-style-type: none;
   color: white;
-`;
-
-export const StyledLink = styled(Link)`
-  color: white;
-  text-decoration: none;
-
-  &:focus, &:hover, &:visited, &:link, &:active {
-      text-decoration: none;
-  }
 `;

@@ -2,50 +2,23 @@ import React from 'react';
 import Container from '../../Components/Container'
 import Card from '../../Components/Card';
 import { Content, PetContainer, Image } from './styles'
-import FundyImg from '../../static/images/fundy.jpg'
-import LuxImg from '../../static/images/lux.jpg'
-import CashImg from '../../static/images/cash.jpg'
-import ChinLiImg from '../../static/images/chin-li.jpg'
 
-const Home = () => {
-  let pets = [
-    {
-      img: FundyImg,
-      name: 'Fundy',
-      type: 'HedgeHog'
-    },
-    {
-      img: ChinLiImg,
-      name: 'Chin Li',
-      type: 'Chinchilla'
-    },
-    {
-      img: LuxImg,
-      name: 'Lux',
-      type: 'Bearded Dragon'
-    },
-    {
-      img: CashImg,
-      name: 'Cash',
-      type: 'Golden Retriever'
-    },
-    {
-      img: CashImg,
-      name: 'Comet',
-      type: 'Tangerine Milk Snake'
-    }
-    
-  ]
+
+const Home = (props) => {
+  function handleCardClick(link){
+    props.history.push(link)
+  }
   return (
     <Container>
       <Card>
         <Content as='h1'>Welcome To My Personal Petland</Content>
+        <Content>Here are some of the lovely little creatures that I look after every day, click on any of the cards to find out more information about each animal</Content>
         <PetContainer>
-          {pets.map(pet => (
-            <Card width={'15%'} margin={'5px'} xs={'100%'}>
+          {props.pets.map(pet => (
+            <Card width={'15%'} margin={'5px'} sm={'100%'} md={'45%'} key={pet.id} cursor={'pointer'} hover onClick={() => handleCardClick(pet.link)}>
               <Image src={pet.img}></Image>
               <Content as='h1'>{pet.name}</Content>
-              <Content>Type: {pet.type}</Content>
+              <Content>{pet.type}</Content>
             </Card>
           ))}
         </PetContainer>

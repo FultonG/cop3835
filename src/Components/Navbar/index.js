@@ -1,26 +1,27 @@
 import React from 'react';
-import { Nav, NavItem, StyledLink } from './styles';
+import { Nav, NavItem } from './styles';
+import  StyledLink  from '../StyledLink'
 
 const Navbar = () => {
   return (
       <Nav>
         <NavItem>
-          <StyledLink to='/'>Home</StyledLink>
+          <StyledLink to='/' color={'white'}>Home</StyledLink>
         </NavItem>
         <NavItem>
-          <StyledLink to='/fundy'>Fundy</StyledLink>
+          <StyledLink to='/fundy' color={'white'}>Fundy</StyledLink>
         </NavItem>
         <NavItem>
-          <StyledLink to='/chin-li'>Chin Li</StyledLink>
+          <StyledLink to='/chin-li' color={'white'}>Chin Li</StyledLink>
         </NavItem>
         <NavItem>
-          <StyledLink to='/lux'>Lux</StyledLink>
+          <StyledLink to='/lux' color={'white'}>Lux</StyledLink>
         </NavItem>
         <NavItem>
-          <StyledLink to='/cash'>Cash</StyledLink>
+          <StyledLink to='/cash' color={'white'}>Cash</StyledLink>
         </NavItem>
         <NavItem>
-          <StyledLink to='/comet'>Comet</StyledLink>
+          <StyledLink to='/comet' color={'white'}>Comet</StyledLink>
         </NavItem>
       </Nav>
   )
