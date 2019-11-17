@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Title = styled.h1`
+export const Content = styled.p`
   width: 100%;
   text-align: center;
 `;
