@@ -14,6 +14,7 @@ import LuxImg from './static/images/lux.jpg'
 import CashImg from './static/images/cash.jpg'
 import ChinLiImg from './static/images/chin-li.jpg'
 import CometImg from './static/images/comet.jpg'
+import Footer from './Components/Footer';
 
 function App() {
 
@@ -66,6 +67,7 @@ function App() {
         <Route path='/comet' component={Comet}></Route>
         <Route exact path='/' render={(props) => <Home {...props} pets={pets}/>}></Route>
       </Switch>
+      <Footer></Footer>
     </Router>
   );
 }

@@ -9,6 +9,11 @@ export const Nav = styled.div`
   justify-content: space-evenly;
   margin: 0px;
   background-color: #8484ce;
+
+  position: fixed;
+  top: 0px;
+  margin-right: auto;
+  margin-left: auto;
 `;
 
 export const NavItem = styled.li`
